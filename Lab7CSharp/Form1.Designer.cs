@@ -36,6 +36,7 @@ namespace Lab7CSharp
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.buttonColor = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.buttonClearShapes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -84,7 +85,7 @@ namespace Lab7CSharp
             this.buttonOpen.TabIndex = 4;
             this.buttonOpen.Text = "Відкрити";
             this.buttonOpen.UseVisualStyleBackColor = true;
-            
+            // 
             // buttonSave
             // 
             this.buttonSave.Location = new System.Drawing.Point(252, 327);
@@ -93,7 +94,6 @@ namespace Lab7CSharp
             this.buttonSave.TabIndex = 5;
             this.buttonSave.Text = "Зберегти";
             this.buttonSave.UseVisualStyleBackColor = true;
-           
             // 
             // pictureBox2
             // 
@@ -102,7 +102,6 @@ namespace Lab7CSharp
             this.pictureBox2.Size = new System.Drawing.Size(353, 161);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
-           
             // 
             // buttonAdd
             // 
@@ -112,7 +111,6 @@ namespace Lab7CSharp
             this.buttonAdd.TabIndex = 7;
             this.buttonAdd.Text = "Додати";
             this.buttonAdd.UseVisualStyleBackColor = true;
-            
             // 
             // comboBoxType
             // 
@@ -121,7 +119,6 @@ namespace Lab7CSharp
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(121, 24);
             this.comboBoxType.TabIndex = 8;
-           
             // 
             // textBoxText
             // 
@@ -136,7 +133,6 @@ namespace Lab7CSharp
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(64, 22);
             this.numericUpDown1.TabIndex = 11;
-        
             // 
             // buttonColor
             // 
@@ -147,9 +143,19 @@ namespace Lab7CSharp
             this.buttonColor.Text = "Колір";
             this.buttonColor.UseVisualStyleBackColor = true;
             // 
+            // buttonClearShapes
+            // 
+            this.buttonClearShapes.Location = new System.Drawing.Point(227, 565);
+            this.buttonClearShapes.Name = "buttonClearShapes";
+            this.buttonClearShapes.Size = new System.Drawing.Size(156, 23);
+            this.buttonClearShapes.TabIndex = 14;
+            this.buttonClearShapes.Text = "Очистити фігури";
+            this.buttonClearShapes.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(794, 616);
+            this.Controls.Add(this.buttonClearShapes);
             this.Controls.Add(this.buttonColor);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textBoxText);
@@ -164,7 +170,6 @@ namespace Lab7CSharp
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Lab7";
-         
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -180,5 +185,6 @@ namespace Lab7CSharp
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button buttonColor;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button buttonClearShapes;
     }
 }
